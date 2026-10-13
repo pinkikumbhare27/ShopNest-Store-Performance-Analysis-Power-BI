@@ -39,14 +39,22 @@ https://www.awesomescreenshot.com/video/57389210?key=070498d6034ee7be307b5f69493
 **Time context:** The report chart does not specify a date range.
 
 ##### 2. Monthly Delivery Delay Analysis
+
 **Finding:** March recorded approximately 1.6K delayed orders, followed by February at 1.1K and November at 1.0K.
+
 **Evidence:** March has the highest displayed delayed-order count among the months shown.
+
 **Business recommendation:** Investigate delayed orders by seller, customer state, and delivery duration to identify potential causes and improve logistics performance.
+
 **Time context:** The chart displays months, but the year is not specified.
 
 ##### 3. Yearly Revenue Trend
+
 **Finding:** The displayed revenue increased from 5.5M in 2017 to 6.6M in 2018, representing approximately 20% growth.
+
 **Evidence:** The difference between the two displayed values is 1.1M.
+
 **Business recommendation:** Analyze which product categories and states contributed to the increase. Use those results to inform inventory and marketing decisions.
+
 **Time context:** 2016–2018. The 2016 value is displayed as 0.0M and requires validation before drawing conclusions about the full trend.
 
