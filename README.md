@@ -22,3 +22,4 @@ Developed skills in real-world problem-solving and data storytelling using Power
 ✔ Power BI – Data Modeling, Visualization, DAX Calculations
 ✔ Power Query – Data Cleaning & Transformation
 ✔ DAX (Data Analysis Expressions) – Custom Measures & KPIs
+
