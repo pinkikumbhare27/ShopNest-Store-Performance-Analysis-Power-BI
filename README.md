@@ -23,3 +23,6 @@ Developed skills in real-world problem-solving and data storytelling using Power
 ✔ Power Query – Data Cleaning & Transformation
 ✔ DAX (Data Analysis Expressions) – Custom Measures & KPIs
 
+#### Working Demo of Power BI Dashboard:
+https://www.awesomescreenshot.com/video/57389210?key=070498d6034ee7be307b5f69493b2e2c
+
