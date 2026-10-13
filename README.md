@@ -1,60 +1,137 @@
 # ShopNest Store Performance Analysis | Power BI
 
-ShopNest stands as the leading department store in the e-commerce marketplaces in Portugal. Serving as a seamless link, it connects small businesses from various regions in Portugal to channels, streamlining the process with a single point of contact.Through the ShopNest Store, these merchants can showcase and sell their products, with the added convenience of direct shipment to customers facilitated by ShopNest logistics partners. The provided data represents authentic commercial information that has undergone the process of anonymization. 
+### 📌 Project Overview
 
-Designed and developed an interactive Power BI dashboard to analyze key e-commerce business metrics, focusing on Sales Performance, Delivery Efficiency, Customer Satisfaction, Payment Behavior, etc. This project provided a deep dive into business data, enabling data-driven decision-making through visual analytics and insights extraction.
+ShopNest is an e-commerce marketplace in Portugal that connects small businesses from different regions with customers. The platform enables merchants to sell products online and ship orders through logistics partners. The project dataset contains anonymized commercial information.
 
-#### 🔍 Key Highlights & My Role:
-✔ Data Cleaning & Transformation: Processed raw datasets using Power Query, handled missing values, corrected data types, and merged relevant tables for seamless analysis.
-✔ Data Modeling & Relationships: Built an optimized relational data model, establishing key connections between Orders, Customers, Products, and Payment methods.
-✔ DAX Calculations: Created dynamic measures to track Total Sales, Delayed Orders, Average Review Score, and Seasonal Revenue Trends.
-✔ Dashboard Design & Navigation: Developed a multi-page, user-friendly dashboard with navigation buttons (shapes) for seamless interaction across different analytical sections.
-✔ Advanced Visualizations & Interactivity: Implemented bar charts, line graphs, pie charts, and tree maps to present insights effectively.
-✔ Business Insights & Impact: Extracted actionable insights on top-performing products, regional sales, customer behavior, and payment preferences, providing valuable takeaways for business optimization.
+I developed an interactive Power BI dashboard to analyze e-commerce performance across sales, delivery efficiency, customer satisfaction, payment behavior, product categories, and regional trends. The goal was to transform raw data into meaningful insights that support data-driven business decisions.
 
-#### 📊 Key Takeaways & Learnings:
-Mastered data transformation, modeling, and DAX to drive analytical solutions.
-Gained expertise in creating interactive dashboards that improve data accessibility and usability.
-Learned how to present business-critical insights visually for better decision-making.
-Developed skills in real-world problem-solving and data storytelling using Power BI.
+### 🛠 Tools and Technologies
 
-#### 🛠 Tools & Technologies Used:
-✔ Power BI – Data Modeling, Visualization, DAX Calculations
-✔ Power Query – Data Cleaning & Transformation
-✔ DAX (Data Analysis Expressions) – Custom Measures & KPIs
+- **Power BI:** Dashboard development, data modeling, and visualization
+- **Power Query:** Data cleaning and transformation
+- **DAX:** Measures and key performance indicators (KPIs)
+- **Visualizations:** Bar charts, line charts, pie charts, treemaps, maps, and column charts
 
-#### Working Demo of Power BI Dashboard:
-https://www.awesomescreenshot.com/video/57389210?key=070498d6034ee7be307b5f69493b2e2c
+### 🔍 Key Highlights and My Role
 
-#### Key Business Findings and Recommendations
+- **Data Cleaning and Transformation:** Cleaned and prepared datasets in Power Query, checked duplicates, handled data types, and prepared tables for analysis.
+- **Data Modeling:** Established relationships between Customers, Orders, Order Items, Products, Payments, Reviews, and other relevant tables.
+- **DAX Calculations:** Developed measures for sales, delayed orders, average review score, and revenue trends.
+- **Dashboard Design:** Created a multi-page dashboard with navigation buttons to make analysis easier.
+- **Interactive Visualizations:** Used charts and maps to explore product categories, delivery performance, payment methods, and regional sales.
+- **Business Analysis:** Identified sales patterns and delivery delays to develop recommendations for further investigation.
 
-##### 1. Top Product Categories by Sales
+### 📊 Working Demo of Power BI Dashboard:
+
+**Working Demo:**  https://www.awesomescreenshot.com/video/57389210?key=070498d6034ee7be307b5f69493b2e2c
+
+
+### 📈 Key Business Findings and Recommendations
+
+#### 1. Top Product Categories by Sales
 
 **Finding:** Health & Beauty recorded 1.19M in sales, followed by Watches & Gifts at 1.17M and Sports & Leisure at 0.91M.
 
 **Evidence:** Health & Beauty exceeded Watches & Gifts by 0.02M in the displayed chart.
 
-**Business recommendation:** Review inventory availability, customer demand, and product profitability in these leading categories before deciding where to allocate additional stock.
+**Business Recommendation:** Review inventory availability, customer demand, and product profitability in these leading categories before deciding where to allocate additional stock.
 
-**Time context:** The report chart does not specify a date range.
+**Time Context:** The chart does not specify a date range.
 
-##### 2. Monthly Delivery Delay Analysis
+#### 2. Monthly Delivery Delay Analysis
 
 **Finding:** March recorded approximately 1.6K delayed orders, followed by February at 1.1K and November at 1.0K.
 
 **Evidence:** March has the highest displayed delayed-order count among the months shown.
 
-**Business recommendation:** Investigate delayed orders by seller, customer state, and delivery duration to identify potential causes and improve logistics performance.
+**Business Recommendation:** Investigate delayed orders by seller, customer state, and delivery duration to identify potential causes. Use these results to determine where logistics improvements may be needed.
 
-**Time context:** The chart displays months, but the year is not specified.
+**Time Context:** The chart displays months, but the year is not specified. These values should not be treated as a recurring seasonal pattern until the year and date coverage are verified.
 
-##### 3. Yearly Revenue Trend
+#### 3. Yearly Revenue Trend
 
-**Finding:** The displayed revenue increased from 5.5M in 2017 to 6.6M in 2018, representing approximately 20% growth.
+**Finding:** Displayed revenue increased from 5.5M in 2017 to 6.6M in 2018, a difference of 1.1M or approximately 20%.
 
-**Evidence:** The difference between the two displayed values is 1.1M.
+**Evidence:** The displayed values show an increase between 2017 and 2018.
 
-**Business recommendation:** Analyze which product categories and states contributed to the increase. Use those results to inform inventory and marketing decisions.
+**Business Recommendation:** Analyze which product categories and states contributed to the increase before making inventory or marketing decisions.
 
-**Time context:** 2016–2018. The 2016 value is displayed as 0.0M and requires validation before drawing conclusions about the full trend.
+**Time Context:** The chart covers 2016–2018. The 2016 value is displayed as 0.0M and should be validated before drawing conclusions about the full trend.
 
+**Note:** The figures above are transcribed from the dashboard chart labels. Confirm the currency, units, date filters, and underlying measures in Power BI before presenting them as final business results.
+
+### 📌 Key KPIs and DAX Measures
+
+The following are example DAX definitions. Confirm that the formulas match the measures used in your actual Power BI report.
+
+#### Total Sales
+
+```DAX
+Total Sales = SUM(order_items[price])
+```
+
+Calculates the sum of item prices. This measure does not include freight charges unless they are added separately.
+
+#### Total Payment Value
+
+```DAX
+Total Payment Value = SUM(order_payments[payment_value])
+```
+
+Calculates the sum of recorded payment values.
+
+#### Average Review Score
+
+```DAX
+Average Review Score = AVERAGE(order_reviews[review_score])
+```
+
+Calculates the average review score.
+
+#### Delayed Orders
+
+```DAX
+Delayed Orders =
+CALCULATE(
+    COUNT(orders[order_id]),
+    FILTER(
+        orders,
+        orders[order_delivered_customer_date]
+            > orders[order_estimated_delivery_date]
+    )
+)
+```
+
+Counts orders delivered after their estimated delivery date. Check how blank delivery dates and undelivered orders are handled in your report.
+
+Other KPIs displayed or analyzed in the project include Total Orders, On-Time Orders, and revenue trends. Include their DAX definitions once you have verified the actual formulas.
+
+### 🧹 Data Cleaning and Data Model
+
+#### Data Preparation
+
+- Checked for duplicate records in relevant key columns.
+- Corrected data types for numeric values, dates, and timestamps.
+- Prepared related tables for analysis using Power Query.
+- Reviewed relationships between the tables used in the dashboard.
+
+#### Main Table Relationships
+
+The model connects the following business entities:
+
+- Customers → Orders → Order Items → Products
+- Orders → Payments
+- Orders → Reviews
+- Order Items → Sellers
+- Products → Category Translation
+
+These relationships support analysis of sales, order delivery, product categories, payments, customer reviews, and sellers. Verify the actual relationship cardinalities and filter directions in Power BI Model view before describing the model as a fully optimized star schema.
+
+### 🎯 Key Learnings and Conclusion
+
+This project strengthened my skills in data cleaning, data modeling, DAX calculations, dashboard design, and data storytelling using Power BI.
+
+The dashboard provides an interactive view of e-commerce performance and highlights areas for further investigation, including leading product categories, delivery delays, and changes in yearly revenue. The findings can help guide more detailed analysis of inventory, logistics, and regional sales performance.
+
+The project demonstrates my ability to transform raw business data into visual reports and communicate findings in a structured, business-focused way.
