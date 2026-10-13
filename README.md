@@ -31,8 +31,11 @@ https://www.awesomescreenshot.com/video/57389210?key=070498d6034ee7be307b5f69493
 ##### 1. Top Product Categories by Sales
 
 **Finding:** Health & Beauty recorded 1.19M in sales, followed by Watches & Gifts at 1.17M and Sports & Leisure at 0.91M.
+
 **Evidence:** Health & Beauty exceeded Watches & Gifts by 0.02M in the displayed chart.
+
 **Business recommendation:** Review inventory availability, customer demand, and product profitability in these leading categories before deciding where to allocate additional stock.
+
 **Time context:** The report chart does not specify a date range.
 
 ##### 2. Monthly Delivery Delay Analysis
